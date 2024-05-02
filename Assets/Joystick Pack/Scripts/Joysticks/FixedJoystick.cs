@@ -13,6 +13,6 @@ public class FixedJoystick : Joystick
     }
     private void Update()
     {
-        Debug.Log(Direction.normalized);
+        //Debug.Log(Direction.normalized);
     }
 }

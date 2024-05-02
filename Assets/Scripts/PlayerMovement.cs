@@ -2,38 +2,27 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+
     [SerializeField] private float moveSpeed = 5f; // Speed of the player movement
-    [SerializeField] private Rigidbody rb; // Reference to the Rigidbody component
-    [SerializeField] private Animator animator; // Reference to the animator component
+    [SerializeField] private CharacterController controller;
+    [SerializeField] private float turnSmoothTime;
+    private float turnSmoothVelocity;
 
-    Vector3 movement; // Vector to store player movement direction
-
-    void Update()
+    private void Update()
     {
-        Vector2 direction = FixedJoystick.Instance.Direction;
-        movement = new Vector3(direction.x, 0f, direction.y).normalized;
+        //Vector2 direction = FixedJoystick.Instance.Direction;
+        float horizontal = Input.GetAxis("Horizontal");
+        float vertical = Input.GetAxis("Vertical");
+        Vector3 direction = new Vector3 (horizontal,0f,vertical).normalized;
 
-
-        FixedJoystick.Instance.GetRadiusTouch();
-
-        if (direction.x !=0 && direction.y != 0)
+        if(direction.magnitude >= 0.1f)
         {
-            animator.SetBool("IsWalk", true);
-            Debug.Log("walk");
-        }
-        else
-        {
-            animator.SetBool("IsWalk", false);
-            Debug.Log("idle");
-        }
+            float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg /** Camera.main.transform.eulerAngles.y*/;
+            float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
+            transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
-        Vector3 rotation = new Vector3(direction.x,0f,direction.y);
-        transform.forward = Vector3.Slerp(transform.forward, rotation, Time.deltaTime*5);
-    }
-
-    void FixedUpdate()
-    {
-        // Movement
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+            //Vector3 moveDirection = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
+            controller.Move(direction.normalized * moveSpeed * Time.deltaTime);
+        }
     }
 }

@@ -25,6 +25,7 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
     public bool SnapX { get { return snapX; } set { snapX = value; } }
     public bool SnapY { get { return snapY; } set { snapY = value; } }
 
+
     [SerializeField] private float handleRange = 1;
     [SerializeField] private float deadZone = 0;
     [SerializeField] private AxisOptions axisOptions = AxisOptions.Both;
@@ -48,8 +49,7 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
         DeadZone = deadZone;
         baseRect = GetComponent<RectTransform>();
         canvas = GetComponentInParent<Canvas>();
-        if (canvas == null)
-            Debug.LogError("The Joystick is not placed inside a canvas");
+       
 
         Vector2 center = new Vector2(0.5f, 0.5f);
         background.pivot = center;
@@ -79,6 +79,7 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
         input = (eventData.position - position) / (radius * canvas.scaleFactor);
         FormatInput();
         HandleInput(input.magnitude, input.normalized, radius, cam);
+        Debug.Log(input);
         handle.anchoredPosition = input * radius * handleRange;
     }
 
@@ -151,13 +152,7 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
         }
         return Vector2.zero;
     }
-    public bool GetRadiusTouch()
-    {
-        Vector2 radius = background.sizeDelta / 2;
-        Vector2 diffrance = handle.anchoredPosition ;
-        Debug.Log("radius " + radius + "  diffrance " + diffrance);
-        return diffrance == radius;
-    }
+   
 }
 
 public enum AxisOptions { Both, Horizontal, Vertical }
