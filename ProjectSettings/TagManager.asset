@@ -6,6 +6,9 @@ TagManager:
   tags:
   - ThievesItem
   - Platform
+  - DestroyedThievesItem
+  - PoliceButton
+  - ThievesButton
   layers:
   - Default
   - TransparentFX

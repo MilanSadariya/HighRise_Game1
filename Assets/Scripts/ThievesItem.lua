@@ -1,19 +1,23 @@
-
+local animator = self.gameObject:GetComponent(Animator)
 
 function self:OnCollisionEnter(hit)
 
-    print('collision enter ' , hit.collider.gameObject.name)
-    if hit.collider.gameObject.name == "CharacterCollider" then
-        OnCollect(hit)
-        end
+    if hit.collider.gameObject.tag == "Platform" then
+        print('DestroyedThieveItem')
+        self.gameObject.tag = "DestroyedThieveItem"
+    end
+
 end
 
-function OnCollect(hit)
-    self.transform.parent = hit.transform
-    self.transform.localPosition = Vector3.new(0, 1.75, 0)
+function DestroyWithAnimation()
+
+    while self.transform.localScale.x > 0.01
+    do self.transform.localScale -= Vector3.one * 0.01 * Time.deltaTime
+    end
+        
 end
 
- function Hello()
+local function Hello()
     print('hello')
 end
 

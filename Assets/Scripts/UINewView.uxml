@@ -7,10 +7,13 @@
     xsi:noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd"
 >
 
-  <hr:UILuaView class="my-ui" picking-mode="Ignore">
-    <hr:UILabel name="myLabel" picking-mode="Ignore">
-    </hr:UILabel>
+<hr:UILuaView class="my-ui" picking-mode="Ignore">
+    <!-- <hr:UIButton name="myButton" picking-mode="Ignore">
+        <hr:UILabel name="label" picking-mode="Ignore">
+        </hr:UILabel>
+    </hr:UIButton> -->
 </hr:UILuaView>
+
 
 
 </UXML>
