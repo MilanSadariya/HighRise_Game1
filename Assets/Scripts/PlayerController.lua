@@ -1,3 +1,5 @@
+
+
 local collectedItem = nil
 local role  = nil
 local destroyingItem = nil
@@ -24,7 +26,7 @@ function self:OnCollisionEnter(hit)
     
     -- When role not selected
     if role == nil then
-        print("nil  , ",hit.collider.gameObject.tag ) 
+        -- print("nil  , ",hit.collider.gameObject.tag ) 
         if hit.collider.gameObject.tag == "ThievesButton" then
             print("ThievesButton")
             OnSelectRole("Thieves")
