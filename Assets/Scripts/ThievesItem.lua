@@ -1,26 +1,14 @@
-local animator = self.gameObject:GetComponent(Animator)
+--!SerializeField
+local item : GameObject = nil
 
-function self:OnCollisionEnter(hit)
-
-    if hit.collider.gameObject.tag == "Platform" then
-        print('DestroyedThieveItem')
-        self.gameObject.tag = "DestroyedThieveItem"
+function Reproduce()
+Timer.After(10,
+    function() 
+        local object =  Object.Instantiate(item)
+        object.transform.parent = self.transform
+        object.transform.localPosition = Vector3.zero
     end
-
+)
 end
-
-function DestroyWithAnimation()
-
-    while self.transform.localScale.x > 0.01
-    do self.transform.localScale -= Vector3.one * 0.01 * Time.deltaTime
-    end
-        
-end
-
-local function Hello()
-    print('hello')
-end
-
-
 
 

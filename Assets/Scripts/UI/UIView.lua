@@ -1,13 +1,13 @@
 --!Type(UI)
 
 --!Bind
-local myButton : UIButton = nil
-btn = myButton
+-- local myButton : UIButton = nil
+-- btn = myButton
 
--- Define button click functionality
-function _OnButtonClick()
-    print('Button click')
-end
+-- -- Define button click functionality
+-- function _OnButtonClick()
+--     print('Button click')
+-- end
 
 
 

@@ -1,0 +1,55 @@
+/*.my-ui #myButton {
+    background-color: #007BFF;
+    color: #FFFFFF;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+*/
+
+/* Panel Styles */
+.panel-container {
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+
+/* Table Layout Styles */
+.table-layout {
+    width: 100%; /* Set table layout width */
+}
+
+/* Table Row Styles */
+.row {
+    margin-bottom: 20px; /* Add margin between rows */
+}
+
+/* Dropdown List Styles */
+.left-dropdown-list,
+.right-dropdown-list {
+    width: 100%; /* Set dropdown list width */
+}
+
+/* Image Styles */
+.left-image,
+.right-image {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+/* Button Styles */
+.left-button,
+.right-button {
+    background-color: #007BFF;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Label Styles */
+.left-label,
+.right-label {
+    font-size: 14px;
+    color: #000000;
+}
+

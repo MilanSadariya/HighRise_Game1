@@ -6,6 +6,8 @@ PluginImporter:
   iconMap:
     Highrise.Lua.Generated.AnchorOld: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}
+    Highrise.Lua.Generated.Client: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
+      type: 3}
     Highrise.Lua.Generated.GeneralChat: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}
     Highrise.Lua.Generated.HighriseCameraController: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
@@ -37,6 +39,8 @@ PluginImporter:
     Highrise.Lua.Generated.UINewView: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}
     Highrise.Lua.Generated.UINewView1: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
+      type: 3}
+    Highrise.Lua.Generated.UIView: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}
     Highrise.Lua.Generated.UserInterface: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}

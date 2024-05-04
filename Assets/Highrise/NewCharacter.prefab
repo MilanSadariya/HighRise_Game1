@@ -62,7 +62,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1.227, z: 0}
-  m_LocalScale: {x: 2, y: 1, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1072096149695597898}
@@ -163,7 +163,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.8
   m_Height: 2.83
   m_Direction: 1
   m_Center: {x: 0, y: -0.01, z: 0}
@@ -185,11 +185,11 @@ MonoBehaviour:
   - Property: {fileID: -3905665111538215400, guid: 6fbe78042c3a2124eafbb30ebf150865,
       type: 3}
     Value:
-      rid: 4226980190527685253
+      rid: 4226980196313203373
   - Property: {fileID: -14062107631532199, guid: 6fbe78042c3a2124eafbb30ebf150865,
       type: 3}
     Value:
-      rid: 4226980190527685254
+      rid: 4226980196313203374
   _uiOutput: 0
   _uiOutputSettings:
     rid: -2
@@ -200,12 +200,12 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 4226980190527685253
+    - rid: 4226980196313203373
       type: {class: GameObjectGlue/GameObjectLuaPropertyValue, ns: Highrise.Lua.Glue,
         asm: com.pz.highrise.lua.glue}
       data:
         _value: {fileID: 2516616679161004390}
-    - rid: 4226980190527685254
+    - rid: 4226980196313203374
       type: {class: GameObjectGlue/GameObjectLuaPropertyValue, ns: Highrise.Lua.Glue,
         asm: com.pz.highrise.lua.glue}
       data:

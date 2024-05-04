@@ -55,7 +55,7 @@ function self:OnCollisionEnter(hit)
 
     -- When role is Police
     elseif role == "Police" then
-        if hit.collider.gameObject.name == "Thieves" then
+        if hit.collider.gameObject.name == "Thieves" and hit.collider.transform.childCount > 0 then
             print('collide with Thieves')
             hit.collider.gameObject:GetComponent("PlayerController"):ThievesCaught()
     end
@@ -77,10 +77,14 @@ end
 
 -- Collect Item
 function Collect(hit)
+    hit.collider.transform.parent:GetComponent("ThievesItem"):Reproduce()
+
     hit.collider.transform.parent = self.transform
     hit.collider.transform.localPosition = Vector3.new(0.03, 0.05, 0.29)
     -- hit.collider.transform.localPosition = Vector3.new(0, 2, 0)
     collectedItem = hit.collider.gameObject
+
+    
 end
 
 -- Put and destroy Item
