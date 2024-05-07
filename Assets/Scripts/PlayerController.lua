@@ -1,12 +1,14 @@
 
+--!SerializeField
+local policeCap : GameObject = nil
+--!SerializeField
+local thieveCap : GameObject = nil
+--!SerializeField
+local caughtParticle : GameObject = nil
 
 local collectedItem = nil
 local role  = nil
 local destroyingItem = nil
---!SerializeField
-local policeCap : GameObject = nil
---!SerializeField
-local ThieveCap : GameObject = nil
 
 function self:Update()
 
@@ -71,7 +73,7 @@ function OnSelectRole(_role)
     if role == "Police" then 
         policeCap.SetActive(policeCap, true)
     elseif role == "Thieves" then
-        ThieveCap.SetActive(ThieveCap, true)
+        thieveCap.SetActive(thieveCap, true)
     end
 end
 
@@ -102,11 +104,18 @@ end
 -- Reset Position and remove item
 function ThievesCaught()
     print('caught Thieves')
-    self.transform.parent.localPosition = Vector3.zero
-    if self.transform.childCount > 0 then
-       Object.Destroy(self.transform.GetChild(self.transform, 0).gameObject)
-       print('distroy thieves item')
-    end
+    caughtParticle.SetActive(caughtParticle, true)
+    Timer.After(0.5,
+        function()
+            self.transform.parent.localPosition = Vector3.zero
+            Camera.main.gameObject:GetComponent("RTSCamera"):CenterOn(self.transform.localPosition,15)
+            -- Camera.main.transform.localPosition = Vector3.new(-17.14054, 13.99519, -17.14054)
+            caughtParticle.SetActive(caughtParticle, false)
+            if self.transform.childCount > 0 then
+                Object.Destroy(self.transform.GetChild(self.transform, 0).gameObject)
+            end
+        end
+        )   
 end
 
 

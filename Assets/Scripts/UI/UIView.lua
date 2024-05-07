@@ -4,14 +4,19 @@
 -- local myButton : UIButton = nil
 -- btn = myButton
 
--- -- Define button click functionality
--- function _OnButtonClick()
---     print('Button click')
--- end
+-- local thiefButton : UIButton = nil
+-- local policeButton : UIButton = nil
 
 
 
--- Bind button click event
--- myButton:RegisterLongPressCallback(function() _OnButtonClick() end)
+function _OnButtonClick()
+   print('Button click')
+end
 
--- myButton:RegisterPressCallback(function() _OnButtonClick() end)
+
+function HideBtn()
+    -- myButton:AddToClassList("Hide")
+
+end
+
+

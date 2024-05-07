@@ -30,7 +30,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8451799477403242459}
   m_Father: {fileID: 0}
@@ -74,7 +74,7 @@ MonoBehaviour:
   - Property: {fileID: 395886928553067138, guid: 853d583a455d8f8448a0de1baf098646,
       type: 3}
     Value:
-      rid: 4226980196313203397
+      rid: 4226980258848702501
   _uiOutput: 0
   _uiOutputSettings:
     rid: -2
@@ -84,7 +84,7 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 4226980196313203397
+    - rid: 4226980258848702501
       type: {class: GameObjectGlue/GameObjectLuaPropertyValue, ns: Highrise.Lua.Glue,
         asm: com.pz.highrise.lua.glue}
       data:

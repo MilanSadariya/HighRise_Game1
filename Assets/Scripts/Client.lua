@@ -1,10 +1,43 @@
--- local uisctipt  = self.gameObject:GetComponent("TestUI")
+-- local uisctipt  = self.gameObject:GetComponent("UIView")
 
 -- function _OnClick()
 --     print('Test UI complete  ', uisctipt.btn.name )
+--     uisctipt.HideBtn()
 -- end
 
 -- uisctipt.btn:RegisterPressCallback(function() _OnClick() end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 -- uisctipt.btn:RegisterLongPressCallback(function() _OnClick() end)
