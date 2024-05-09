@@ -7,86 +7,15 @@
 }
 */
 
-/* Panel Styles */
-.panel-container {
-    background-color: #FFFFFF;
-    padding: 20px;
+.my-ui {
+    -unity-text-align: middle-center;
+    margin-top: auto;
+    background-color: rgba(255,255,255,0.75);
 }
 
-/* Table Layout Styles */
-.table-layout {
-    width: 100%; /* Set table layout width */
-}
-
-/* Table Row Styles */
-.row {
-    margin-bottom: 20px; /* Add margin between rows */
-}
-
-/* Dropdown List Styles */
-.left-dropdown-list,
-.right-dropdown-list {
-    width: 100%; /* Set dropdown list width */
-}
-
-/* Image Styles */
-.left-image,
-.right-image {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
-}
-
-/* Button Styles */
-.left-button,
-.right-button {
-    background-color: #007BFF;
-    color: #FFFFFF;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-/* Label Styles */
-.left-label,
-.right-label {
-    font-size: 14px;
-    color: #000000;
-}
-
-/*Hide UI*/
-.MyUI.Hide{
-    display: none;
-}
-
-.centered-container {
-    justify-content: center;
-    align-items: center;
-}
-
-.button-container {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    display: flex; /* Use flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-}
-
-.button-container hr\\:UIButton {
-    margin: 0 10px; /* Add space between buttons */
-}
-
-
-
-.left-button-container {
-    position: absolute;
-    top: 10px; /* Adjust as needed */
-    left: 10px; /* Adjust as needed */
-}
-
-.left-button-container hr\\:UIButton {
-    width: 150px; /* Adjust button width */
-    height: 50px; /* Adjust button height */
+.my-ui #myLabel{
+    color: rgba(0,0,0,1);
+    font-size: 200%;
+    letter-spacing: 5%;
 }
 

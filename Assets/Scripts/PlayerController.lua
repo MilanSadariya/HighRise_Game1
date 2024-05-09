@@ -10,6 +10,10 @@ local collectedItem = nil
 local role  = nil
 local destroyingItem = nil
 
+local gameManager = require("GameManager")
+
+
+
 function self:Update()
 
     -- if destroyingItem ~= nil then
@@ -59,7 +63,17 @@ function self:OnCollisionEnter(hit)
     elseif role == "Police" then
         if hit.collider.gameObject.name == "Thieves" and hit.collider.transform.childCount > 0 then
             print('collide with Thieves')
+
             hit.collider.gameObject:GetComponent("PlayerController"):ThievesCaught()
+
+            Timer.After(1, function()
+                gameManager.WinPanel:SetActive(true)
+                -- gameManager.UserInterface.SetText("You Win, Reselect your role")
+                Timer.After(3, function()
+                    RemoveRole()
+                end)
+            end
+            )
     end
 
     end
@@ -74,8 +88,22 @@ function OnSelectRole(_role)
         policeCap.SetActive(policeCap, true)
     elseif role == "Thieves" then
         thieveCap.SetActive(thieveCap, true)
+        gameManager.ThieveQuests:SetActive(true)
+        -- gameManager.UserInterface.SetText("Steal the Crystal from the first floor, then sell it in a green plane")
     end
 end
+
+function RemoveRole()
+    policeCap.SetActive(policeCap, false)
+    thieveCap.SetActive(thieveCap, false)
+    gameManager.ThieveQuests:SetActive(false)
+    gameManager.WinPanel:SetActive(false)
+    gameManager.LosePanel:SetActive(false)
+    role = nil
+    self.gameObject.name = "NewCharacter"
+    -- gameManager.UserInterface.SetText("")
+end
+
 
 -- Collect Item
 function Collect(hit)
@@ -85,8 +113,6 @@ function Collect(hit)
     hit.collider.transform.localPosition = Vector3.new(0.03, 0.05, 0.29)
     -- hit.collider.transform.localPosition = Vector3.new(0, 2, 0)
     collectedItem = hit.collider.gameObject
-
-    
 end
 
 -- Put and destroy Item
@@ -99,6 +125,7 @@ function Put(hit)
     local itemAnimator : Animator = collectedItem:GetComponent(Animator)
     itemAnimator:PlayInFixedTime("CrystalDestroy", 0)
     Timer.After(2, function() Object.Destroy(collectedItem)end)
+    -- gameManager.UserInterface.SetText("You Win, Reselect your role")
 end
 
 -- Reset Position and remove item
@@ -108,12 +135,20 @@ function ThievesCaught()
     Timer.After(0.5,
         function()
             self.transform.parent.localPosition = Vector3.zero
-            Camera.main.gameObject:GetComponent("RTSCamera"):CenterOn(self.transform.localPosition,15)
+            -- Camera.main.gameObject:GetComponent("RTSCamera"):CenterOn(Vector3.zero)
             -- Camera.main.transform.localPosition = Vector3.new(-17.14054, 13.99519, -17.14054)
             caughtParticle.SetActive(caughtParticle, false)
             if self.transform.childCount > 0 then
                 Object.Destroy(self.transform.GetChild(self.transform, 0).gameObject)
             end
+            
+            gameManager.LosePanel:SetActive(true)
+            -- gameManager.UserInterface.SetText("You Lose, Reselect your role")
+            Timer.After(3, function()
+                RemoveRole()
+            end
+            )
+
         end
         )   
 end

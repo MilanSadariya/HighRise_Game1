@@ -14,22 +14,13 @@
     </hr:UIButton>
 </hr:UILuaView> -->
 
-<hr:UILuaView class="button-container" picking-mode="Ignore">
-    <hr:UIButton name="policeButton" text="Police" picking-mode="Ignore" style="width: 200px;">
-    </hr:UIButton>
-    <hr:UIButton name="thiefButton" text="Thieve" picking-mode="Ignore" style="width: 200px;">
-    </hr:UIButton>
-
-    <hr:UIButton name="leftButton" text="Left Button" picking-mode="Ignore">
-    </hr:UIButton>
-
-
+<hr:UILuaView class="my-ui" picking-mode="Ignore">
+    <hr:UILabel name="myLabel" picking-mode="Ignore">
+    </hr:UILabel>
+  
 </hr:UILuaView>
 
-<hr:UILuaView class="left-button-container" picking-mode="Ignore">
-    <hr:UIButton name="leftButton" text="Left Button" picking-mode="Ignore">
-    </hr:UIButton>
-</hr:UILuaView>
+
 
 
 

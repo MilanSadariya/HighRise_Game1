@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8231664456199503945}
   - component: {fileID: 6935820404463719798}
-  - component: {fileID: 2208318986065093823}
   - component: {fileID: 923543039148735881}
   m_Layer: 0
   m_Name: Crystal
@@ -56,39 +55,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.77
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2208318986065093823
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6373332927064384747}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 705041569, guid: 991a4badf00d28384a32b2c089782f03, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _networkId: 0
-  _script: {fileID: -974389366465450183, guid: 853d583a455d8f8448a0de1baf098646, type: 3}
-  _properties:
-  - Property: {fileID: 395886928553067138, guid: 853d583a455d8f8448a0de1baf098646,
-      type: 3}
-    Value:
-      rid: 4226980258848702501
-  _uiOutput: 0
-  _uiOutputSettings:
-    rid: -2
-  m_item: {fileID: 0}
-  references:
-    version: 2
-    RefIds:
-    - rid: -2
-      type: {class: , ns: , asm: }
-    - rid: 4226980258848702501
-      type: {class: GameObjectGlue/GameObjectLuaPropertyValue, ns: Highrise.Lua.Glue,
-        asm: com.pz.highrise.lua.glue}
-      data:
-        _value: {fileID: 0}
 --- !u!95 &923543039148735881
 Animator:
   serializedVersion: 5

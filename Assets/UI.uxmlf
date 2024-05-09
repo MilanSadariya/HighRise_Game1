@@ -2,3 +2,5 @@
 @import url("/Assets/Scripts/UI/UINewView.uxml");
 @import url("/Assets/Scripts/UI/UIView.uxml");
 @import url("/Assets/Scripts/UI/Temp.uxml");
+@import url("/Assets/Scripts/UI/Test.uxml");
+@import url("/Assets/Scripts/UI/UserInterface.uxml");

@@ -240,6 +240,13 @@ function CenterOn(newTarget, newZoom)
     zoom = Mathf.Clamp(zoom, zoomMin, zoomMax)
     offset = Vector3.new(0, 0, offset.z)
 end
+function CenterOn(newTarget)
+    zoom = zoom
+
+    target = newTarget
+    zoom = Mathf.Clamp(zoom, zoomMin, zoomMax)
+    offset = Vector3.new(0, 0, offset.z)
+end
 
 local InertiaMinVelocity = 0.5; -- prevents the infinite slow drag at the end of inertia
 local InertiaStepDuration = 1 / 60; -- each "inertia step" is normalized to 60fps

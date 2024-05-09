@@ -1,4 +1,4 @@
---!SerializeField
+    --!SerializeField
 local item : GameObject = nil
 
 function Reproduce()
