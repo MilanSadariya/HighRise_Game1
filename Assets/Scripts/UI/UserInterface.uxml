@@ -7,7 +7,7 @@
     xsi:noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd"
 >
 
-  <!-- <hr:UILuaView class="user-interface">
+  <hr:UILuaView class="user-interface">
 
   <hr:UILuaView class="my-ui" picking-mode="Ignore">
     <hr:UILabel name="myLabel" picking-mode="Position">
@@ -15,7 +15,7 @@
     <hr:UIButton name="myButton" picking-mode="Position">
     </hr:UIButton>
 </hr:UILuaView>
-  </hr:UILuaView> -->
+  </hr:UILuaView>
 
 
 

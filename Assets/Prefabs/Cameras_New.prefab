@@ -1,0 +1,833 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1125324412001484417
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6693086784626824228}
+  - component: {fileID: 8670101009961554707}
+  - component: {fileID: 8745654597985820606}
+  - component: {fileID: 5916198724453569855}
+  m_Layer: 0
+  m_Name: MainCam
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6693086784626824228
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125324412001484417}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.19996412, y: 0.3736123, z: -0.08282785, w: 0.90198}
+  m_LocalPosition: {x: -20, y: 26, z: -20}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6401257370194730108}
+  m_LocalEulerAnglesHint: {x: 25, y: 45, z: 0}
+--- !u!20 &8670101009961554707
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125324412001484417}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 28
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!114 &8745654597985820606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125324412001484417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 1
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    quality: 3
+    frameInfluence: 0.1
+    jitterScale: 1
+    mipBias: 0
+    varianceClampScale: 0.9
+    contrastAdaptiveSharpening: 0
+--- !u!114 &5916198724453569855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125324412001484417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -632075725, guid: 991a4badf00d28384a32b2c089782f03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _networkId: 0
+  _script: {fileID: -974389366465450183, guid: 75be91cb877f649beb48734ee09ff3bc, type: 3}
+  _properties:
+  - Property: {fileID: -1731332183334042957, guid: 75be91cb877f649beb48734ee09ff3bc,
+      type: 3}
+    Value:
+      rid: 4226980401059726003
+  - Property: {fileID: -8261924012045699564, guid: 75be91cb877f649beb48734ee09ff3bc,
+      type: 3}
+    Value:
+      rid: 4226980401059726004
+  - Property: {fileID: 1906610169136509595, guid: 75be91cb877f649beb48734ee09ff3bc,
+      type: 3}
+    Value:
+      rid: 4226980401059726005
+  - Property: {fileID: 2241067102808288007, guid: 75be91cb877f649beb48734ee09ff3bc,
+      type: 3}
+    Value:
+      rid: 4226980401059726006
+  - Property: {fileID: -6639983733270233360, guid: 75be91cb877f649beb48734ee09ff3bc,
+      type: 3}
+    Value:
+      rid: 4226980401059726007
+  - Property: {fileID: 427459632973059124, guid: 75be91cb877f649beb48734ee09ff3bc,
+      type: 3}
+    Value:
+      rid: 4226980401059726008
+  - Property: {fileID: 4269188703926874057, guid: 75be91cb877f649beb48734ee09ff3bc,
+      type: 3}
+    Value:
+      rid: 4226980401059726009
+  - Property: {fileID: -5520468270290857300, guid: 75be91cb877f649beb48734ee09ff3bc,
+      type: 3}
+    Value:
+      rid: 4226980401059726010
+  - Property: {fileID: -9165391169920593349, guid: 75be91cb877f649beb48734ee09ff3bc,
+      type: 3}
+    Value:
+      rid: 4226980401059726011
+  _uiOutput: 0
+  _uiOutputSettings:
+    rid: -2
+  _copyFromPropertiesVersion: 1
+  m_canPan: 1
+  m_canRotate: 1
+  m_canZoom: 1
+  m_touchRotationDampener: 0.4
+  m_pivot: {x: 16, y: 2, z: 16}
+  m_zoomMin: 6
+  m_zoomMax: 66
+  m_yawOffsetMax: 30
+  m_yawOffsetMin: -30
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 4226980401059726003
+      type: {class: BooleanLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
+      data:
+        _value: 1
+    - rid: 4226980401059726004
+      type: {class: BooleanLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
+      data:
+        _value: 1
+    - rid: 4226980401059726005
+      type: {class: BooleanLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
+      data:
+        _value: 1
+    - rid: 4226980401059726006
+      type: {class: NumberLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
+      data:
+        _value: 0.4
+    - rid: 4226980401059726007
+      type: {class: Vector3Glue/Vector3LuaPropertyValue, ns: Highrise.Lua.Glue, asm: com.pz.highrise.lua.glue}
+      data:
+        _value: {x: 16, y: 2, z: 16}
+    - rid: 4226980401059726008
+      type: {class: NumberLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
+      data:
+        _value: 6
+    - rid: 4226980401059726009
+      type: {class: NumberLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
+      data:
+        _value: 66
+    - rid: 4226980401059726010
+      type: {class: NumberLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
+      data:
+        _value: 30
+    - rid: 4226980401059726011
+      type: {class: NumberLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
+      data:
+        _value: -30
+--- !u!1 &8316390334303670202
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6401257370194730108}
+  m_Layer: 0
+  m_Name: Cameras_New
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6401257370194730108
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8316390334303670202}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6693086784626824228}
+  - {fileID: 1190219605507208021}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &5219921779244118646
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6401257370194730108}
+    m_Modifications:
+    - target: {fileID: 391036451374816755, guid: 7e08006c26fe3f14d9f4e782c25d148f,
+        type: 3}
+      propertyPath: managedReferences[6712053589472706567]._value
+      value: 
+      objectReference: {fileID: 1125324412001484417}
+    - target: {fileID: 861129840890287823, guid: 7e08006c26fe3f14d9f4e782c25d148f,
+        type: 3}
+      propertyPath: managedReferences[6712053589472706567]._value
+      value: 
+      objectReference: {fileID: 1125324412001484417}
+    - target: {fileID: 1674361955961820393, guid: 7e08006c26fe3f14d9f4e782c25d148f,
+        type: 3}
+      propertyPath: managedReferences[6712053589472706567]._value
+      value: 
+      objectReference: {fileID: 1125324412001484417}
+    - target: {fileID: 3060673769820664145, guid: 7e08006c26fe3f14d9f4e782c25d148f,
+        type: 3}
+      propertyPath: m_Name
+      value: Triggers
+      objectReference: {fileID: 0}
+    - target: {fileID: 6019091992317166486, guid: 7e08006c26fe3f14d9f4e782c25d148f,
+        type: 3}
+      propertyPath: managedReferences[6712053589472706567]._value
+      value: 
+      objectReference: {fileID: 1125324412001484417}
+    - target: {fileID: 6409855232349421859, guid: 7e08006c26fe3f14d9f4e782c25d148f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409855232349421859, guid: 7e08006c26fe3f14d9f4e782c25d148f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409855232349421859, guid: 7e08006c26fe3f14d9f4e782c25d148f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409855232349421859, guid: 7e08006c26fe3f14d9f4e782c25d148f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409855232349421859, guid: 7e08006c26fe3f14d9f4e782c25d148f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409855232349421859, guid: 7e08006c26fe3f14d9f4e782c25d148f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409855232349421859, guid: 7e08006c26fe3f14d9f4e782c25d148f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409855232349421859, guid: 7e08006c26fe3f14d9f4e782c25d148f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409855232349421859, guid: 7e08006c26fe3f14d9f4e782c25d148f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409855232349421859, guid: 7e08006c26fe3f14d9f4e782c25d148f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8238879193982792156, guid: 7e08006c26fe3f14d9f4e782c25d148f,
+        type: 3}
+      propertyPath: managedReferences[6712053589472706564]._value
+      value: 
+      objectReference: {fileID: 1125324412001484417}
+    m_RemovedComponents:
+    - {fileID: 8238879193982792156, guid: 7e08006c26fe3f14d9f4e782c25d148f, type: 3}
+    - {fileID: 391036451374816755, guid: 7e08006c26fe3f14d9f4e782c25d148f, type: 3}
+    - {fileID: 6019091992317166486, guid: 7e08006c26fe3f14d9f4e782c25d148f, type: 3}
+    - {fileID: 861129840890287823, guid: 7e08006c26fe3f14d9f4e782c25d148f, type: 3}
+    - {fileID: 1674361955961820393, guid: 7e08006c26fe3f14d9f4e782c25d148f, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2222255529972968851, guid: 7e08006c26fe3f14d9f4e782c25d148f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 503377248297340556}
+    - targetCorrespondingSourceObject: {fileID: 3526880887471092666, guid: 7e08006c26fe3f14d9f4e782c25d148f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1836684339455949746}
+    - targetCorrespondingSourceObject: {fileID: 1430053039410102243, guid: 7e08006c26fe3f14d9f4e782c25d148f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3315639200727762915}
+    - targetCorrespondingSourceObject: {fileID: 1200863449967465838, guid: 7e08006c26fe3f14d9f4e782c25d148f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1292148085326407290}
+    - targetCorrespondingSourceObject: {fileID: 3897954450521846183, guid: 7e08006c26fe3f14d9f4e782c25d148f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1778619828144417466}
+  m_SourcePrefab: {fileID: 100100000, guid: 7e08006c26fe3f14d9f4e782c25d148f, type: 3}
+--- !u!4 &1190219605507208021 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6409855232349421859, guid: 7e08006c26fe3f14d9f4e782c25d148f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5219921779244118646}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6244217324497543141 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2222255529972968851, guid: 7e08006c26fe3f14d9f4e782c25d148f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5219921779244118646}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &503377248297340556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6244217324497543141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1793392861, guid: 991a4badf00d28384a32b2c089782f03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _networkId: 0
+  _script: {fileID: -974389366465450183, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5, type: 3}
+  _properties:
+  - Property: {fileID: 6797615792361730402, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
+      type: 3}
+    Value:
+      rid: 4226980401059726012
+  - Property: {fileID: -8120315553516261115, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
+      type: 3}
+    Value:
+      rid: 4226980401059726013
+  - Property: {fileID: 2898898708763351838, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
+      type: 3}
+    Value:
+      rid: 4226980401059726014
+  - Property: {fileID: -6463738128077122639, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
+      type: 3}
+    Value:
+      rid: 4226980401059726015
+  - Property: {fileID: -5833626036978621604, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
+      type: 3}
+    Value:
+      rid: 4226980401059726016
+  _uiOutput: 0
+  _uiOutputSettings:
+    rid: -2
+  _copyFromPropertiesVersion: 1
+  m_Cam: {fileID: 0}
+  m_MainMaskVis:
+    serializedVersion: 2
+    m_Bits: 0
+  m_MainMaskClick:
+    serializedVersion: 2
+    m_Bits: 0
+  m_MyMask:
+    serializedVersion: 2
+    m_Bits: 0
+  m_myLayerName: 
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 4226980401059726012
+      type: {class: GameObjectGlue/GameObjectLuaPropertyValue, ns: Highrise.Lua.Glue,
+        asm: com.pz.highrise.lua.glue}
+      data:
+        _value: {fileID: 0}
+    - rid: 4226980401059726013
+      type: {class: LayerMaskPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
+      data:
+        _value:
+          serializedVersion: 2
+          m_Bits: 0
+    - rid: 4226980401059726014
+      type: {class: LayerMaskPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
+      data:
+        _value:
+          serializedVersion: 2
+          m_Bits: 0
+    - rid: 4226980401059726015
+      type: {class: LayerMaskPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
+      data:
+        _value:
+          serializedVersion: 2
+          m_Bits: 0
+    - rid: 4226980401059726016
+      type: {class: StringLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
+      data:
+        _value: 
+--- !u!1 &6402625268386899736 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1200863449967465838, guid: 7e08006c26fe3f14d9f4e782c25d148f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5219921779244118646}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1292148085326407290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6402625268386899736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1793392861, guid: 991a4badf00d28384a32b2c089782f03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _networkId: 0
+  _script: {fileID: -974389366465450183, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5, type: 3}
+  _properties:
+  - Property: {fileID: 6797615792361730402, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
+      type: 3}
+    Value:
+      rid: 4226980401059726027
+  - Property: {fileID: -8120315553516261115, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
+      type: 3}
+    Value:
+      rid: 4226980401059726028
+  - Property: {fileID: 2898898708763351838, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
+      type: 3}
+    Value:
+      rid: 4226980401059726029
+  - Property: {fileID: -6463738128077122639, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
+      type: 3}
+    Value:
+      rid: 4226980401059726030
+  - Property: {fileID: -5833626036978621604, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
+      type: 3}
+    Value:
+      rid: 4226980401059726031
+  _uiOutput: 0
+  _uiOutputSettings:
+    rid: -2
+  _copyFromPropertiesVersion: 1
+  m_Cam: {fileID: 0}
+  m_MainMaskVis:
+    serializedVersion: 2
+    m_Bits: 0
+  m_MainMaskClick:
+    serializedVersion: 2
+    m_Bits: 0
+  m_MyMask:
+    serializedVersion: 2
+    m_Bits: 0
+  m_myLayerName: 
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 4226980401059726027
+      type: {class: GameObjectGlue/GameObjectLuaPropertyValue, ns: Highrise.Lua.Glue,
+        asm: com.pz.highrise.lua.glue}
+      data:
+        _value: {fileID: 0}
+    - rid: 4226980401059726028
+      type: {class: LayerMaskPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
+      data:
+        _value:
+          serializedVersion: 2
+          m_Bits: 0
+    - rid: 4226980401059726029
+      type: {class: LayerMaskPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
+      data:
+        _value:
+          serializedVersion: 2
+          m_Bits: 0
+    - rid: 4226980401059726030
+      type: {class: LayerMaskPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
+      data:
+        _value:
+          serializedVersion: 2
+          m_Bits: 0
+    - rid: 4226980401059726031
+      type: {class: StringLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
+      data:
+        _value: 
+--- !u!1 &6604654859543776661 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1430053039410102243, guid: 7e08006c26fe3f14d9f4e782c25d148f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5219921779244118646}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3315639200727762915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6604654859543776661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1793392861, guid: 991a4badf00d28384a32b2c089782f03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _networkId: 0
+  _script: {fileID: -974389366465450183, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5, type: 3}
+  _properties:
+  - Property: {fileID: 6797615792361730402, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
+      type: 3}
+    Value:
+      rid: 4226980401059726022
+  - Property: {fileID: -8120315553516261115, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
+      type: 3}
+    Value:
+      rid: 4226980401059726023
+  - Property: {fileID: 2898898708763351838, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
+      type: 3}
+    Value:
+      rid: 4226980401059726024
+  - Property: {fileID: -6463738128077122639, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
+      type: 3}
+    Value:
+      rid: 4226980401059726025
+  - Property: {fileID: -5833626036978621604, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
+      type: 3}
+    Value:
+      rid: 4226980401059726026
+  _uiOutput: 0
+  _uiOutputSettings:
+    rid: -2
+  _copyFromPropertiesVersion: 1
+  m_Cam: {fileID: 0}
+  m_MainMaskVis:
+    serializedVersion: 2
+    m_Bits: 0
+  m_MainMaskClick:
+    serializedVersion: 2
+    m_Bits: 0
+  m_MyMask:
+    serializedVersion: 2
+    m_Bits: 0
+  m_myLayerName: 
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 4226980401059726022
+      type: {class: GameObjectGlue/GameObjectLuaPropertyValue, ns: Highrise.Lua.Glue,
+        asm: com.pz.highrise.lua.glue}
+      data:
+        _value: {fileID: 0}
+    - rid: 4226980401059726023
+      type: {class: LayerMaskPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
+      data:
+        _value:
+          serializedVersion: 2
+          m_Bits: 0
+    - rid: 4226980401059726024
+      type: {class: LayerMaskPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
+      data:
+        _value:
+          serializedVersion: 2
+          m_Bits: 0
+    - rid: 4226980401059726025
+      type: {class: LayerMaskPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
+      data:
+        _value:
+          serializedVersion: 2
+          m_Bits: 0
+    - rid: 4226980401059726026
+      type: {class: StringLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
+      data:
+        _value: 
+--- !u!1 &8683252655096562124 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3526880887471092666, guid: 7e08006c26fe3f14d9f4e782c25d148f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5219921779244118646}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1836684339455949746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8683252655096562124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1793392861, guid: 991a4badf00d28384a32b2c089782f03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _networkId: 0
+  _script: {fileID: -974389366465450183, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5, type: 3}
+  _properties:
+  - Property: {fileID: 6797615792361730402, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
+      type: 3}
+    Value:
+      rid: 4226980401059726017
+  - Property: {fileID: -8120315553516261115, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
+      type: 3}
+    Value:
+      rid: 4226980401059726018
+  - Property: {fileID: 2898898708763351838, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
+      type: 3}
+    Value:
+      rid: 4226980401059726019
+  - Property: {fileID: -6463738128077122639, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
+      type: 3}
+    Value:
+      rid: 4226980401059726020
+  - Property: {fileID: -5833626036978621604, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
+      type: 3}
+    Value:
+      rid: 4226980401059726021
+  _uiOutput: 0
+  _uiOutputSettings:
+    rid: -2
+  _copyFromPropertiesVersion: 1
+  m_Cam: {fileID: 0}
+  m_MainMaskVis:
+    serializedVersion: 2
+    m_Bits: 0
+  m_MainMaskClick:
+    serializedVersion: 2
+    m_Bits: 0
+  m_MyMask:
+    serializedVersion: 2
+    m_Bits: 0
+  m_myLayerName: 
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 4226980401059726017
+      type: {class: GameObjectGlue/GameObjectLuaPropertyValue, ns: Highrise.Lua.Glue,
+        asm: com.pz.highrise.lua.glue}
+      data:
+        _value: {fileID: 0}
+    - rid: 4226980401059726018
+      type: {class: LayerMaskPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
+      data:
+        _value:
+          serializedVersion: 2
+          m_Bits: 0
+    - rid: 4226980401059726019
+      type: {class: LayerMaskPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
+      data:
+        _value:
+          serializedVersion: 2
+          m_Bits: 0
+    - rid: 4226980401059726020
+      type: {class: LayerMaskPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
+      data:
+        _value:
+          serializedVersion: 2
+          m_Bits: 0
+    - rid: 4226980401059726021
+      type: {class: StringLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
+      data:
+        _value: 
+--- !u!1 &9108727986804900817 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3897954450521846183, guid: 7e08006c26fe3f14d9f4e782c25d148f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5219921779244118646}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1778619828144417466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108727986804900817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1793392861, guid: 991a4badf00d28384a32b2c089782f03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _networkId: 0
+  _script: {fileID: -974389366465450183, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5, type: 3}
+  _properties:
+  - Property: {fileID: 6797615792361730402, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
+      type: 3}
+    Value:
+      rid: 4226980401059726032
+  - Property: {fileID: -8120315553516261115, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
+      type: 3}
+    Value:
+      rid: 4226980401059726033
+  - Property: {fileID: 2898898708763351838, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
+      type: 3}
+    Value:
+      rid: 4226980401059726034
+  - Property: {fileID: -6463738128077122639, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
+      type: 3}
+    Value:
+      rid: 4226980401059726035
+  - Property: {fileID: -5833626036978621604, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
+      type: 3}
+    Value:
+      rid: 4226980401059726036
+  _uiOutput: 0
+  _uiOutputSettings:
+    rid: -2
+  _copyFromPropertiesVersion: 1
+  m_Cam: {fileID: 0}
+  m_MainMaskVis:
+    serializedVersion: 2
+    m_Bits: 0
+  m_MainMaskClick:
+    serializedVersion: 2
+    m_Bits: 0
+  m_MyMask:
+    serializedVersion: 2
+    m_Bits: 0
+  m_myLayerName: 
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 4226980401059726032
+      type: {class: GameObjectGlue/GameObjectLuaPropertyValue, ns: Highrise.Lua.Glue,
+        asm: com.pz.highrise.lua.glue}
+      data:
+        _value: {fileID: 0}
+    - rid: 4226980401059726033
+      type: {class: LayerMaskPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
+      data:
+        _value:
+          serializedVersion: 2
+          m_Bits: 0
+    - rid: 4226980401059726034
+      type: {class: LayerMaskPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
+      data:
+        _value:
+          serializedVersion: 2
+          m_Bits: 0
+    - rid: 4226980401059726035
+      type: {class: LayerMaskPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
+      data:
+        _value:
+          serializedVersion: 2
+          m_Bits: 0
+    - rid: 4226980401059726036
+      type: {class: StringLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
+      data:
+        _value: 

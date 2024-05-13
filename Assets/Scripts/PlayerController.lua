@@ -13,67 +13,54 @@ local destroyingItem = nil
 local gameManager = require("GameManager")
 
 
-
-function self:Update()
-
-    -- if destroyingItem ~= nil then
-    --     if destroyingItem.transform.localScale.x > 0.05 then
-    --         destroyingItem.transform.localScale -= Vector3.one *  0.01 * Time.deltaTime
-    --         print('scale')
-    --     else 
-    --         Object.Destroy(destroyingItem)
-    --         destroyingItem = nil
-    --         print('destroy') 
-    --     end
-    -- end
-end
-
 function self:OnCollisionEnter(hit)
     
+    hitObject = hit.collider.gameObject
+
     -- When role not selected
-    if role == nil then
-        -- print("nil  , ",hit.collider.gameObject.tag ) 
-        if hit.collider.gameObject.tag == "ThievesButton" then
-            print("ThievesButton")
-            OnSelectRole("Thieves")
-        elseif hit.collider.gameObject.tag == "PoliceButton" then
-            OnSelectRole("Police")
-        end
-        return
+    -- if role == nil then
+    --     if hit.collider.gameObject.tag == "ThievesButton" then
+    --         print("ThievesButton")
+    --         OnSelectRole("Thieves")
+    --     elseif hit.collider.gameObject.tag == "PoliceButton" then
+    --         OnSelectRole("Police")
+    --     end
+    --     return
+    -- end
+
+    if hitObject.tag ~= role then
+        RemoveRole()
+            if hit.collider.gameObject.tag == "ThievesButton" then
+                OnSelectRole("Thieves")
+            elseif hit.collider.gameObject.tag == "PoliceButton" then
+                OnSelectRole("Police")
+            end
     end
 
     -- When role is Thieves 
     if role == "Thieves" then
         
         -- When collide collected object
-        if hit.collider.gameObject == collectedItem then
+        if hitObject == collectedItem then
             return
         end
         
-        tag = hit.collider.gameObject.tag
-        
-        if  tag ==  "ThievesItem"  and self.transform.childCount == 0 then 
+        if  hitObject.tag ==  "ThievesItem"  and self.transform.childCount == 0 then 
             Collect(hit)
         
-        elseif tag == "Platform" and collectedItem ~= nil  and self.transform.childCount > 0  then 
+        elseif  hitObject.tag  == "Platform" and collectedItem ~= nil  and self.transform.childCount > 0  then 
             Put(hit)
         end
 
+
+
     -- When role is Police
     elseif role == "Police" then
-        if hit.collider.gameObject.name == "Thieves" and hit.collider.transform.childCount > 0 then
+        if hitObject.name == "Thieves" and hitObject.transform.childCount > 0 then
             print('collide with Thieves')
 
-            hit.collider.gameObject:GetComponent("PlayerController"):ThievesCaught()
+           hitObject:GetComponent("PlayerController"):ThievesCaught()
 
-            Timer.After(1, function()
-                gameManager.WinPanel:SetActive(true)
-                -- gameManager.UserInterface.SetText("You Win, Reselect your role")
-                Timer.After(3, function()
-                    RemoveRole()
-                end)
-            end
-            )
     end
 
     end
@@ -83,26 +70,27 @@ end
 function OnSelectRole(_role)
     self.gameObject.name = _role
     role = _role
+
     -- set cap
     if role == "Police" then 
-        policeCap.SetActive(policeCap, true)
+        policeCap.transform.localScale = Vector3.one
     elseif role == "Thieves" then
-        thieveCap.SetActive(thieveCap, true)
-        gameManager.ThieveQuests:SetActive(true)
-        -- gameManager.UserInterface.SetText("Steal the Crystal from the first floor, then sell it in a green plane")
+        thieveCap.transform.localScale = Vector3.one
+         ShowEverythingInCamera()
     end
 end
-
+    
 function RemoveRole()
-    policeCap.SetActive(policeCap, false)
-    thieveCap.SetActive(thieveCap, false)
-    gameManager.ThieveQuests:SetActive(false)
-    gameManager.WinPanel:SetActive(false)
-    gameManager.LosePanel:SetActive(false)
-    role = nil
-    self.gameObject.name = "NewCharacter"
-    -- gameManager.UserInterface.SetText("")
+        policeCap.transform.localScale = Vector3.zero
+        thieveCap.transform.localScale = Vector3.zero
+        role = nil
+        self.gameObject.name = "NewCharacter"
+        HideDirectionArrowInCamera()
 end
+
+
+
+
 
 
 -- Collect Item
@@ -111,7 +99,6 @@ function Collect(hit)
 
     hit.collider.transform.parent = self.transform
     hit.collider.transform.localPosition = Vector3.new(0.03, 0.05, 0.29)
-    -- hit.collider.transform.localPosition = Vector3.new(0, 2, 0)
     collectedItem = hit.collider.gameObject
 end
 
@@ -125,7 +112,6 @@ function Put(hit)
     local itemAnimator : Animator = collectedItem:GetComponent(Animator)
     itemAnimator:PlayInFixedTime("CrystalDestroy", 0)
     Timer.After(2, function() Object.Destroy(collectedItem)end)
-    -- gameManager.UserInterface.SetText("You Win, Reselect your role")
 end
 
 -- Reset Position and remove item
@@ -143,11 +129,6 @@ function ThievesCaught()
             end
             
             gameManager.LosePanel:SetActive(true)
-            -- gameManager.UserInterface.SetText("You Lose, Reselect your role")
-            Timer.After(3, function()
-                RemoveRole()
-            end
-            )
 
         end
         )   
@@ -155,3 +136,45 @@ end
 
 
 
+-- Camera Culling Mask assign
+
+local function bitwiseOR(a, b)
+    local result = 0
+    local bit = 1
+    while a > 0 or b > 0 do
+        if a % 2 == 1 or b % 2 == 1 then
+            result = result + bit
+        end
+        a = math.floor(a / 2)
+        b = math.floor(b / 2)
+        bit = bit * 2
+    end
+    return result
+end
+
+-- Bitwise AND function
+local function bitwiseAND(a, b)
+    local result = 0
+    local bit = 1
+    while a > 0 and b > 0 do
+        if a % 2 == 1 and b % 2 == 1 then
+            result = result + bit
+        end
+        a = math.floor(a / 2)
+        b = math.floor(b / 2)
+        bit = bit * 2
+    end
+    return result
+end
+
+local cameraLayer = 511
+local maskLayer = 479 
+local uiLayer = 63
+
+function HideDirectionArrowInCamera()
+    Camera.main.cullingMask = bitwiseAND(cameraLayer, maskLayer)
+end
+
+function ShowEverythingInCamera()
+    Camera.main.cullingMask = bitwiseOR(cameraLayer, uiLayer)
+end
