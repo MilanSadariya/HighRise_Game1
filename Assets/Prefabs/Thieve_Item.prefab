@@ -54,7 +54,7 @@ MonoBehaviour:
   - Property: {fileID: 395886928553067138, guid: 853d583a455d8f8448a0de1baf098646,
       type: 3}
     Value:
-      rid: 4226980401059726094
+      rid: 4226980423784726540
   _uiOutput: 0
   _uiOutputSettings:
     rid: -2
@@ -65,7 +65,7 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 4226980401059726094
+    - rid: 4226980423784726540
       type: {class: GameObjectGlue/GameObjectLuaPropertyValue, ns: Highrise.Lua.Glue,
         asm: com.pz.highrise.lua.glue}
       data:

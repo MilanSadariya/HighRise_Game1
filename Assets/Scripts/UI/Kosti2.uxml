@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd"
+>
+<hr:UILuaView class="missionsPanel" picking-mode="Ignore">
+    <hr:UILabel class="title" text="Role Mission" picking-mode="Ignore"/>
+    <hr:UILuaView class="missionContainer" picking-mode="Ignore">
+        <hr:UILuaView class="missionRow" picking-mode="Ignore">
+            <hr:UIImage class="missionImage"/>
+            <hr:UILabel class="missionName"/>
+            <hr:UILabel class="missionProgress"/>
+            <hr:UIButton class="missionButton"/>
+        </hr:UILuaView>
+
+        <hr:UILuaView class="missionRow" picking-mode="Ignore">
+            <hr:UIImage class="missionImage"/>
+            <hr:UILabel class="missionName"/>
+            <hr:UILabel class="missionProgress"/>
+            <hr:UIButton class="missionButton"/>
+        </hr:UILuaView>
+        <!-- Repeat for additional mission rows -->
+    </hr:UILuaView>
+    <!-- Repeat for the second container -->
+</hr:UILuaView>
+</UXML>

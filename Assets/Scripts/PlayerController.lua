@@ -17,31 +17,21 @@ function self:OnCollisionEnter(hit)
     
     hitObject = hit.collider.gameObject
 
-    -- When role not selected
-    -- if role == nil then
-    --     if hit.collider.gameObject.tag == "ThievesButton" then
-    --         print("ThievesButton")
-    --         OnSelectRole("Thieves")
-    --     elseif hit.collider.gameObject.tag == "PoliceButton" then
-    --         OnSelectRole("Police")
-    --     end
-    --     return
-    -- end
-
     if hitObject.tag ~= role then
-        RemoveRole()
-            if hit.collider.gameObject.tag == "ThievesButton" then
-                OnSelectRole("Thieves")
-            elseif hit.collider.gameObject.tag == "PoliceButton" then
-                OnSelectRole("Police")
-            end
+        if hit.collider.gameObject.tag == "ThievesButton" then
+            RemoveRole()
+            OnSelectRole("Thieves")
+        elseif hit.collider.gameObject.tag == "PoliceButton" then
+            RemoveRole()
+            OnSelectRole("Police")
+        end
     end
 
     -- When role is Thieves 
     if role == "Thieves" then
         
         -- When collide collected object
-        if hitObject == collectedItem then
+        if hitObject == collectedItem then  
             return
         end
         

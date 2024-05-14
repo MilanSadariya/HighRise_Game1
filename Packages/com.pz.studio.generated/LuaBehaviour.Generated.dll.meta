@@ -8,6 +8,8 @@ PluginImporter:
       type: 3}
     Highrise.Lua.Generated.Arrow: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}
+    Highrise.Lua.Generated.CameraTriggerScript: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
+      type: 3}
     Highrise.Lua.Generated.Client: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}
     Highrise.Lua.Generated.ColorPeg: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
@@ -35,6 +37,8 @@ PluginImporter:
     Highrise.Lua.Generated.Joystick: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}
     Highrise.Lua.Generated.JoystickLua: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
+      type: 3}
+    Highrise.Lua.Generated.Kosti: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}
     Highrise.Lua.Generated.LightBoardEraser: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}

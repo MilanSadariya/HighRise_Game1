@@ -4,3 +4,5 @@
 @import url("/Assets/Scripts/UI/Temp.uxml");
 @import url("/Assets/Scripts/UI/Test.uxml");
 @import url("/Assets/Scripts/UI/UserInterface.uxml");
+@import url("/Assets/Scripts/UI/Kosti.uxml");
+@import url("/Assets/Scripts/UI/Kosti2.uxml");

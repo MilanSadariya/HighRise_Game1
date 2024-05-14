@@ -147,39 +147,39 @@ MonoBehaviour:
   - Property: {fileID: -1731332183334042957, guid: 75be91cb877f649beb48734ee09ff3bc,
       type: 3}
     Value:
-      rid: 4226980401059726003
+      rid: 4226980423784726549
   - Property: {fileID: -8261924012045699564, guid: 75be91cb877f649beb48734ee09ff3bc,
       type: 3}
     Value:
-      rid: 4226980401059726004
+      rid: 4226980423784726550
   - Property: {fileID: 1906610169136509595, guid: 75be91cb877f649beb48734ee09ff3bc,
       type: 3}
     Value:
-      rid: 4226980401059726005
+      rid: 4226980423784726551
   - Property: {fileID: 2241067102808288007, guid: 75be91cb877f649beb48734ee09ff3bc,
       type: 3}
     Value:
-      rid: 4226980401059726006
+      rid: 4226980423784726552
   - Property: {fileID: -6639983733270233360, guid: 75be91cb877f649beb48734ee09ff3bc,
       type: 3}
     Value:
-      rid: 4226980401059726007
+      rid: 4226980423784726553
   - Property: {fileID: 427459632973059124, guid: 75be91cb877f649beb48734ee09ff3bc,
       type: 3}
     Value:
-      rid: 4226980401059726008
+      rid: 4226980423784726554
   - Property: {fileID: 4269188703926874057, guid: 75be91cb877f649beb48734ee09ff3bc,
       type: 3}
     Value:
-      rid: 4226980401059726009
+      rid: 4226980423784726555
   - Property: {fileID: -5520468270290857300, guid: 75be91cb877f649beb48734ee09ff3bc,
       type: 3}
     Value:
-      rid: 4226980401059726010
+      rid: 4226980423784726556
   - Property: {fileID: -9165391169920593349, guid: 75be91cb877f649beb48734ee09ff3bc,
       type: 3}
     Value:
-      rid: 4226980401059726011
+      rid: 4226980423784726557
   _uiOutput: 0
   _uiOutputSettings:
     rid: -2
@@ -198,39 +198,39 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 4226980401059726003
+    - rid: 4226980423784726549
       type: {class: BooleanLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: 1
-    - rid: 4226980401059726004
+    - rid: 4226980423784726550
       type: {class: BooleanLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: 1
-    - rid: 4226980401059726005
+    - rid: 4226980423784726551
       type: {class: BooleanLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: 1
-    - rid: 4226980401059726006
+    - rid: 4226980423784726552
       type: {class: NumberLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: 0.4
-    - rid: 4226980401059726007
+    - rid: 4226980423784726553
       type: {class: Vector3Glue/Vector3LuaPropertyValue, ns: Highrise.Lua.Glue, asm: com.pz.highrise.lua.glue}
       data:
         _value: {x: 16, y: 2, z: 16}
-    - rid: 4226980401059726008
+    - rid: 4226980423784726554
       type: {class: NumberLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: 6
-    - rid: 4226980401059726009
+    - rid: 4226980423784726555
       type: {class: NumberLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: 66
-    - rid: 4226980401059726010
+    - rid: 4226980423784726556
       type: {class: NumberLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: 30
-    - rid: 4226980401059726011
+    - rid: 4226980423784726557
       type: {class: NumberLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: -30
@@ -415,23 +415,23 @@ MonoBehaviour:
   - Property: {fileID: 6797615792361730402, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
       type: 3}
     Value:
-      rid: 4226980401059726012
+      rid: 4226980423784726558
   - Property: {fileID: -8120315553516261115, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
       type: 3}
     Value:
-      rid: 4226980401059726013
+      rid: 4226980423784726559
   - Property: {fileID: 2898898708763351838, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
       type: 3}
     Value:
-      rid: 4226980401059726014
+      rid: 4226980423784726560
   - Property: {fileID: -6463738128077122639, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
       type: 3}
     Value:
-      rid: 4226980401059726015
+      rid: 4226980423784726561
   - Property: {fileID: -5833626036978621604, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
       type: 3}
     Value:
-      rid: 4226980401059726016
+      rid: 4226980423784726562
   _uiOutput: 0
   _uiOutputSettings:
     rid: -2
@@ -452,30 +452,30 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 4226980401059726012
+    - rid: 4226980423784726558
       type: {class: GameObjectGlue/GameObjectLuaPropertyValue, ns: Highrise.Lua.Glue,
         asm: com.pz.highrise.lua.glue}
       data:
         _value: {fileID: 0}
-    - rid: 4226980401059726013
+    - rid: 4226980423784726559
       type: {class: LayerMaskPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value:
           serializedVersion: 2
           m_Bits: 0
-    - rid: 4226980401059726014
+    - rid: 4226980423784726560
       type: {class: LayerMaskPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value:
           serializedVersion: 2
           m_Bits: 0
-    - rid: 4226980401059726015
+    - rid: 4226980423784726561
       type: {class: LayerMaskPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value:
           serializedVersion: 2
           m_Bits: 0
-    - rid: 4226980401059726016
+    - rid: 4226980423784726562
       type: {class: StringLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: 
@@ -503,23 +503,23 @@ MonoBehaviour:
   - Property: {fileID: 6797615792361730402, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
       type: 3}
     Value:
-      rid: 4226980401059726027
+      rid: 4226980423784726573
   - Property: {fileID: -8120315553516261115, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
       type: 3}
     Value:
-      rid: 4226980401059726028
+      rid: 4226980423784726574
   - Property: {fileID: 2898898708763351838, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
       type: 3}
     Value:
-      rid: 4226980401059726029
+      rid: 4226980423784726575
   - Property: {fileID: -6463738128077122639, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
       type: 3}
     Value:
-      rid: 4226980401059726030
+      rid: 4226980423784726576
   - Property: {fileID: -5833626036978621604, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
       type: 3}
     Value:
-      rid: 4226980401059726031
+      rid: 4226980423784726577
   _uiOutput: 0
   _uiOutputSettings:
     rid: -2
@@ -540,30 +540,30 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 4226980401059726027
+    - rid: 4226980423784726573
       type: {class: GameObjectGlue/GameObjectLuaPropertyValue, ns: Highrise.Lua.Glue,
         asm: com.pz.highrise.lua.glue}
       data:
         _value: {fileID: 0}
-    - rid: 4226980401059726028
+    - rid: 4226980423784726574
       type: {class: LayerMaskPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value:
           serializedVersion: 2
           m_Bits: 0
-    - rid: 4226980401059726029
+    - rid: 4226980423784726575
       type: {class: LayerMaskPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value:
           serializedVersion: 2
           m_Bits: 0
-    - rid: 4226980401059726030
+    - rid: 4226980423784726576
       type: {class: LayerMaskPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value:
           serializedVersion: 2
           m_Bits: 0
-    - rid: 4226980401059726031
+    - rid: 4226980423784726577
       type: {class: StringLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: 
@@ -591,23 +591,23 @@ MonoBehaviour:
   - Property: {fileID: 6797615792361730402, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
       type: 3}
     Value:
-      rid: 4226980401059726022
+      rid: 4226980423784726568
   - Property: {fileID: -8120315553516261115, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
       type: 3}
     Value:
-      rid: 4226980401059726023
+      rid: 4226980423784726569
   - Property: {fileID: 2898898708763351838, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
       type: 3}
     Value:
-      rid: 4226980401059726024
+      rid: 4226980423784726570
   - Property: {fileID: -6463738128077122639, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
       type: 3}
     Value:
-      rid: 4226980401059726025
+      rid: 4226980423784726571
   - Property: {fileID: -5833626036978621604, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
       type: 3}
     Value:
-      rid: 4226980401059726026
+      rid: 4226980423784726572
   _uiOutput: 0
   _uiOutputSettings:
     rid: -2
@@ -628,30 +628,30 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 4226980401059726022
+    - rid: 4226980423784726568
       type: {class: GameObjectGlue/GameObjectLuaPropertyValue, ns: Highrise.Lua.Glue,
         asm: com.pz.highrise.lua.glue}
       data:
         _value: {fileID: 0}
-    - rid: 4226980401059726023
+    - rid: 4226980423784726569
       type: {class: LayerMaskPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value:
           serializedVersion: 2
           m_Bits: 0
-    - rid: 4226980401059726024
+    - rid: 4226980423784726570
       type: {class: LayerMaskPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value:
           serializedVersion: 2
           m_Bits: 0
-    - rid: 4226980401059726025
+    - rid: 4226980423784726571
       type: {class: LayerMaskPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value:
           serializedVersion: 2
           m_Bits: 0
-    - rid: 4226980401059726026
+    - rid: 4226980423784726572
       type: {class: StringLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: 
@@ -679,23 +679,23 @@ MonoBehaviour:
   - Property: {fileID: 6797615792361730402, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
       type: 3}
     Value:
-      rid: 4226980401059726017
+      rid: 4226980423784726563
   - Property: {fileID: -8120315553516261115, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
       type: 3}
     Value:
-      rid: 4226980401059726018
+      rid: 4226980423784726564
   - Property: {fileID: 2898898708763351838, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
       type: 3}
     Value:
-      rid: 4226980401059726019
+      rid: 4226980423784726565
   - Property: {fileID: -6463738128077122639, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
       type: 3}
     Value:
-      rid: 4226980401059726020
+      rid: 4226980423784726566
   - Property: {fileID: -5833626036978621604, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
       type: 3}
     Value:
-      rid: 4226980401059726021
+      rid: 4226980423784726567
   _uiOutput: 0
   _uiOutputSettings:
     rid: -2
@@ -716,30 +716,30 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 4226980401059726017
+    - rid: 4226980423784726563
       type: {class: GameObjectGlue/GameObjectLuaPropertyValue, ns: Highrise.Lua.Glue,
         asm: com.pz.highrise.lua.glue}
       data:
         _value: {fileID: 0}
-    - rid: 4226980401059726018
+    - rid: 4226980423784726564
       type: {class: LayerMaskPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value:
           serializedVersion: 2
           m_Bits: 0
-    - rid: 4226980401059726019
+    - rid: 4226980423784726565
       type: {class: LayerMaskPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value:
           serializedVersion: 2
           m_Bits: 0
-    - rid: 4226980401059726020
+    - rid: 4226980423784726566
       type: {class: LayerMaskPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value:
           serializedVersion: 2
           m_Bits: 0
-    - rid: 4226980401059726021
+    - rid: 4226980423784726567
       type: {class: StringLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: 
@@ -767,23 +767,23 @@ MonoBehaviour:
   - Property: {fileID: 6797615792361730402, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
       type: 3}
     Value:
-      rid: 4226980401059726032
+      rid: 4226980423784726578
   - Property: {fileID: -8120315553516261115, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
       type: 3}
     Value:
-      rid: 4226980401059726033
+      rid: 4226980423784726579
   - Property: {fileID: 2898898708763351838, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
       type: 3}
     Value:
-      rid: 4226980401059726034
+      rid: 4226980423784726580
   - Property: {fileID: -6463738128077122639, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
       type: 3}
     Value:
-      rid: 4226980401059726035
+      rid: 4226980423784726581
   - Property: {fileID: -5833626036978621604, guid: 6c1b4cdcd5fd8db4d9e2cac2527c2fe5,
       type: 3}
     Value:
-      rid: 4226980401059726036
+      rid: 4226980423784726582
   _uiOutput: 0
   _uiOutputSettings:
     rid: -2
@@ -804,30 +804,30 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 4226980401059726032
+    - rid: 4226980423784726578
       type: {class: GameObjectGlue/GameObjectLuaPropertyValue, ns: Highrise.Lua.Glue,
         asm: com.pz.highrise.lua.glue}
       data:
         _value: {fileID: 0}
-    - rid: 4226980401059726033
+    - rid: 4226980423784726579
       type: {class: LayerMaskPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value:
           serializedVersion: 2
           m_Bits: 0
-    - rid: 4226980401059726034
+    - rid: 4226980423784726580
       type: {class: LayerMaskPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value:
           serializedVersion: 2
           m_Bits: 0
-    - rid: 4226980401059726035
+    - rid: 4226980423784726581
       type: {class: LayerMaskPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value:
           serializedVersion: 2
           m_Bits: 0
-    - rid: 4226980401059726036
+    - rid: 4226980423784726582
       type: {class: StringLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: 

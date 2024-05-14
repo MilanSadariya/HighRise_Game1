@@ -9,12 +9,16 @@
 
   <hr:UILuaView class="user-interface">
 
-  <hr:UILuaView class="my-ui" picking-mode="Ignore">
+  <!-- <hr:UILuaView class="my-ui" picking-mode="Ignore">
     <hr:UILabel name="myLabel" picking-mode="Position">
     </hr:UILabel>
     <hr:UIButton name="myButton" picking-mode="Position">
     </hr:UIButton>
-</hr:UILuaView>
+</hr:UILuaView> -->
+
+     <hr:UIButton text="Thieve" parse-escape-sequences="true" display-tooltip-when-elided="true" focusable="false" style="height: 100px; width: 200px; left: 551px; right: 0; top: 465px;" />
+    <hr:UIButton text="Police" parse-escape-sequences="true" display-tooltip-when-elided="true" focusable="false" name="Button" style="align-self: flex-end; justify-content: center; align-items: center; -unity-text-align: middle-center; white-space: normal; transform-origin: center; translate: 0 0; left: 0; top: 0; right: 0; bottom: 0; width: 150px; height: 50px; font-size: 25px; position: relative;" />
+
   </hr:UILuaView>
 
 
