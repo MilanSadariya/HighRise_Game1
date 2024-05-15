@@ -1,18 +1,17 @@
-
 .my-ui {
-    position: relative; /* Ensure the parent container is positioned relative */
-    height: 100%; /* Full height of the parent container */
-    width: 100%; /* Full width of the parent container */
+    position: relative;
+    height: 100%; 
+    width: 100%; 
 }
 .my-ui #myButton {
     position: absolute;
-    bottom: 40%; /* Adjust distance from the bottom */
-    right: -65%; /* Adjust distance from the right */
+    bottom: 40%; 
+    right: -65%; 
     background-image: url(‘path/to/your/image.png’);
     background-size: cover;
-    width: 100px; /* Adjust size as needed */
-    height: 100px; /* Adjust size as needed */
-    border-radius: 50%; /* Makes the button circular */
+    width: 100px;
+    height: 100px; 
+    border-radius: 50%; 
 
     background-image: url('/Assets/Sprite/Police_New.png');
 }
@@ -22,6 +21,6 @@
     font-size: 100%;
 }
 
-.my-ui.hidden{
+.hidden{
     display : none;
 }

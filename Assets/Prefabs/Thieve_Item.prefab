@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8013318353135224418}
   - component: {fileID: 1244594496325143759}
   - component: {fileID: 7191061722516482894}
-  - component: {fileID: 5779641190059056792}
   m_Layer: 0
   m_Name: Thieve_Item
   m_TagString: Untagged
@@ -43,7 +42,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1638804870344361379}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 705041569, guid: 991a4badf00d28384a32b2c089782f03, type: 3}
   m_Name: 
@@ -54,7 +53,7 @@ MonoBehaviour:
   - Property: {fileID: 395886928553067138, guid: 853d583a455d8f8448a0de1baf098646,
       type: 3}
     Value:
-      rid: 4226980423784726540
+      rid: 4226980448232276070
   _uiOutput: 0
   _uiOutputSettings:
     rid: -2
@@ -65,7 +64,7 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 4226980423784726540
+    - rid: 4226980448232276070
       type: {class: GameObjectGlue/GameObjectLuaPropertyValue, ns: Highrise.Lua.Glue,
         asm: com.pz.highrise.lua.glue}
       data:
@@ -92,19 +91,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &5779641190059056792
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1638804870344361379}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 499ddce1181c6974b825d69c5e4cb340, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item: {fileID: 2789312642645953954}
 --- !u!1001 &99995767836606325
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -641,12 +627,6 @@ PrefabInstance:
 --- !u!4 &935550959149984000 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8231664456199503945, guid: 4c37dad4f92dffb4e921e71a6e604f78,
-    type: 3}
-  m_PrefabInstance: {fileID: 9135272114252818761}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2789312642645953954 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6373332927064384747, guid: 4c37dad4f92dffb4e921e71a6e604f78,
     type: 3}
   m_PrefabInstance: {fileID: 9135272114252818761}
   m_PrefabAsset: {fileID: 0}

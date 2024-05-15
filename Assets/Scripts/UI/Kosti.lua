@@ -1,21 +1,22 @@
 --Type(UI)
 --Bind
-local myButton : UIButton = nil
-local buttonLabel : UILabel = nil
 local container : UIView = nil;
+--Bind
+local myButton : UIButton = nil
+--Bind
+local buttonLabel : UILabel = nil
 -- Function to handle button click
 
--- function self:Start()
---     Timer.After(5,
---     function()
---         myButton:AddToClassList("hidden")
+-- function self:Awake()
+--     My_Button = myButton
+
+--     Timer.After(3, function() 
+--         My_Button:AddToClassList("hidden")
 --     end)
 -- end
-local function onButtonClick()
-    print("Button clicked")
-    buttonLabel:SetPrelocalizedText("Button Clicked!",true)
+
+print("hello")
+
+function _OnButtonClick()
+    print("Button clickedddd")
 end
-
-myButton:RegisterPressCallback( onButtonClick())
-
-

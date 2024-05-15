@@ -1,6 +1,8 @@
---!SerializeField
-local UserInterface : GameObject = nil
-local ui = UserInterface:GetComponent("UserInterface")
+local collectBtn : UIButton = nil
 
- function self:Start()
+GMCollectBtn = collectBtn
+
+function SetButton(btn)
+    GMCollectBtn = btn
+    print("Set buttons")
 end

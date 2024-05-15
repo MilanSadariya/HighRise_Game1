@@ -7,7 +7,7 @@
     xsi:noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd"
 >
 
-  <hr:UILuaView name="container" class="my-ui">
+  <hr:UILuaView name="container" class="my-ui" picking-mode="Ignore" >
     <hr:UIButton name="myButton" picking-mode="Position" >
         <hr:UILabel name="buttonLabel" picking-mode="Ignore">Click Me</hr:UILabel>
     </hr:UIButton>

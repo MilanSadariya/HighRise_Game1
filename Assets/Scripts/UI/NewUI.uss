@@ -1,0 +1,26 @@
+.my-ui {
+    position: relative;
+    height: 100%; 
+    width: 100%; 
+}
+.my-ui #collectButton {
+    position: absolute;
+    bottom: 40%; 
+    right: -65%; 
+    background-image: url(‘path/to/your/image.png’);
+    background-size: cover;
+    width: 100px;
+    height: 100px; 
+    border-radius: 50%; 
+
+    background-image: url('/Assets/Sprite/Police_New.png');
+}
+
+.my-ui #buttonLabel {
+    color: white;
+    font-size: 100%;
+}
+
+.hidden{
+    display : none;
+}

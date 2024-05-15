@@ -1,34 +1,19 @@
---!Type(UI)
+--Type(UI)
+--Bind
+local container : UIView = nil;
+--Bind
+local collectButton : UIButton = nil
+--Bind
+local buttonLabel : UILabel = nil
 
---!Bind
--- local myButton : UIButton = nil
--- btn = myButton
+-- print("call")
 
--- local thiefButton : UIButton = nil
--- local policeButton : UIButton = nil
+-- function self:Awake()
+--     CollectButton = collectButton
 
-local myLabel : UILabel = nil
+--     Timer.After(3, function() 
+--         CollectButton:AddToClassList("hidden")
+--     end)
+-- end
 
-
-function SetText(text)
-    myLabel:SetPrelocalizedText(text,true)
-end
-
-function _OnButtonClick()
-   print('Button click')
-end
-
-
-function HideBtn()
-    -- myButton:AddToClassList("Hide")
-
-end
-
-
-local label1 : UILabel = nil
-local label2 : UILabel = nil
-
-label1:SetPrelocalizedText("Label 1",true)
-label2:SetPrelocalizedText("Label 2",true)
-
-
+print("Hellop")
