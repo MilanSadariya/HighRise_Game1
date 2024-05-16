@@ -4,4 +4,4 @@ function OnLableClick()
     print("lable clicked")
 end
 
-uisctipt.MyLabel:RegisterPressCallback(function() OnLableClick() end)
+uisctipt.MyLabel:RegisterPressCallback(function() uisctipt:Hide() end)

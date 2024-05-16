@@ -82,7 +82,7 @@ public class PlayerController : MonoBehaviour
         else if (role == "Thieves")
         {
             thieveCap.SetActive(true);
-            gameManager.QuestPanel.SetActive(true);
+            //gameManager.QuestPanel.SetActive(true);
         }
     }
 

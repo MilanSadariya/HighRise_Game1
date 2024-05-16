@@ -9,6 +9,7 @@ local caughtParticle : GameObject = nil
 local collectedItem = nil
 local role  = nil
 local destroyingItem = nil
+local collected : GameObject = nil
 
 local gameManager = require("GameManager")
 
@@ -27,22 +28,22 @@ function self:OnCollisionEnter(hit)
         end
     end
 
-    -- When role is Thieves 
+    -- When role is Thieves
     if role == "Thieves" then
         
         -- When collide collected object
-        if hitObject == collectedItem then  
+        if hitObject == collectedItem then
             return
         end
         
         if  hitObject.tag ==  "ThievesItem"  and self.transform.childCount == 0 then 
             Collect(hit)
+            gameManager.UIClient:EnableUI()
+            gameManager.UIClient.UIScript.Collect_Button:RegisterPressCallback(function() Collect(hit)  end )
         
         elseif  hitObject.tag  == "Platform" and collectedItem ~= nil  and self.transform.childCount > 0  then 
             Put(hit)
-        end
-
-
+    end
 
     -- When role is Police
     elseif role == "Police" then
@@ -50,9 +51,16 @@ function self:OnCollisionEnter(hit)
             print('collide with Thieves')
 
            hitObject:GetComponent("PlayerController"):ThievesCaught()
+           gameManager.UIClient:EnableUI()
 
+        end
     end
+end
 
+
+function self:OnCollisionExit(hit)
+    if  hit.collider.gameObject.tag ==  "ThievesItem"  and self.transform.childCount == 0 then 
+        gameManager.UIClient:DisableUI()
     end
 end
 
@@ -64,8 +72,10 @@ function OnSelectRole(_role)
     -- set cap
     if role == "Police" then 
         policeCap.transform.localScale = Vector3.one
+        gameManager.UIClient:ShowPoliceUI()
     elseif role == "Thieves" then
         thieveCap.transform.localScale = Vector3.one
+        gameManager.UIClient:ShowThieveUI()
          ShowEverythingInCamera()
     end
 end
@@ -90,10 +100,26 @@ function Collect(hit)
     hit.collider.transform.parent = self.transform
     hit.collider.transform.localPosition = Vector3.new(0.03, 0.05, 0.29)
     collectedItem = hit.collider.gameObject
+    collected = hit.collider.gameObject
 end
 
 -- Put and destroy Item
 function Put(hit)
+    -- print("collected" ,collectedItem.name)
+    -- local name : string = collectedItem.name
+    -- gameManager:OnSellItem(collected)
+
+    name = collected.name
+    if name == "Crystal" then 
+        gameManager.UIClient.UIScript:CrystalsSteald()
+    elseif name == "Potion" then 
+        gameManager.UIClient.UIScript:PotionSteald()
+    elseif name == "Radio" then 
+        gameManager.UIClient.UIScript:RadioSteald()
+    elseif name == "Book" then 
+        gameManager.UIClient.UIScript:BookSteald()
+    end
+
     collectedItem.transform.parent = hit.collider.transform
     collectedItem.transform.localPosition = Vector3.zero
     collectedItem.transform.localScale += (Vector3.one -  collectedItem.transform.parent.transform.localScale) 
@@ -101,6 +127,7 @@ function Put(hit)
     collectedItem.tag = "DestroyedThievesItem"
     local itemAnimator : Animator = collectedItem:GetComponent(Animator)
     itemAnimator:PlayInFixedTime("CrystalDestroy", 0)
+
     Timer.After(2, function() Object.Destroy(collectedItem)end)
 end
 

@@ -1,8 +1,4 @@
-local collectBtn : UIButton = nil
+--!Type(Module)
+UIClient = nil
 
-GMCollectBtn = collectBtn
 
-function SetButton(btn)
-    GMCollectBtn = btn
-    print("Set buttons")
-end

@@ -152,7 +152,6 @@ GameObject:
   - component: {fileID: 5039294673232346199}
   - component: {fileID: 3991988209094821175}
   - component: {fileID: 4793423349100483428}
-  - component: {fileID: 5289689241631737950}
   m_Layer: 0
   m_Name: PlayerController
   m_TagString: Untagged
@@ -293,57 +292,42 @@ MonoBehaviour:
   - Property: {fileID: -3905665111538215400, guid: 6fbe78042c3a2124eafbb30ebf150865,
       type: 3}
     Value:
-      rid: 4226980448232276067
+      rid: 4226980473527075074
   - Property: {fileID: -7227784203364840518, guid: 6fbe78042c3a2124eafbb30ebf150865,
       type: 3}
     Value:
-      rid: 4226980448232276068
+      rid: 4226980473527075075
   - Property: {fileID: -3607523585492997882, guid: 6fbe78042c3a2124eafbb30ebf150865,
       type: 3}
     Value:
-      rid: 4226980448232276069
+      rid: 4226980473527075076
   _uiOutput: 0
   _uiOutputSettings:
     rid: -2
   _copyFromPropertiesVersion: 1
-  m_policeCap: {fileID: 0}
-  m_thieveCap: {fileID: 0}
-  m_caughtParticle: {fileID: 0}
+  m_policeCap: {fileID: 5360616304243343116}
+  m_thieveCap: {fileID: 5700791260273880254}
+  m_caughtParticle: {fileID: 7451243192811819511}
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 4226980448232276067
+    - rid: 4226980473527075074
       type: {class: GameObjectGlue/GameObjectLuaPropertyValue, ns: Highrise.Lua.Glue,
         asm: com.pz.highrise.lua.glue}
       data:
-        _value: {fileID: 0}
-    - rid: 4226980448232276068
+        _value: {fileID: 5360616304243343116}
+    - rid: 4226980473527075075
       type: {class: GameObjectGlue/GameObjectLuaPropertyValue, ns: Highrise.Lua.Glue,
         asm: com.pz.highrise.lua.glue}
       data:
-        _value: {fileID: 0}
-    - rid: 4226980448232276069
+        _value: {fileID: 5700791260273880254}
+    - rid: 4226980473527075076
       type: {class: GameObjectGlue/GameObjectLuaPropertyValue, ns: Highrise.Lua.Glue,
         asm: com.pz.highrise.lua.glue}
       data:
-        _value: {fileID: 0}
---- !u!114 &5289689241631737950
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2802817822653074317}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 421dfed2f769401499c62f3d0e2f7d8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  policeCap: {fileID: 5360616304243343116}
-  thieveCap: {fileID: 5700791260273880254}
-  caughtParticle: {fileID: 7451243192811819511}
+        _value: {fileID: 7451243192811819511}
 --- !u!1 &4707769714844277501
 GameObject:
   m_ObjectHideFlags: 0
@@ -392,6 +376,87 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _networkId: 0
   _script: {fileID: -974389366465450183, guid: 2ee9ed6c030d43142acf3b90ba55e6ac, type: 3}
+  _properties: []
+  _uiOutput: 0
+  _uiOutputSettings:
+    rid: -2
+  _copyFromPropertiesVersion: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+--- !u!1 &5034664436043147700
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2420657743329465370}
+  - component: {fileID: 4744596312734800371}
+  - component: {fileID: 4728209742481319640}
+  m_Layer: 0
+  m_Name: NewUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &2420657743329465370
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5034664436043147700}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 434.969, y: -80.61872, z: 413.89777}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1072096149695597898}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4744596312734800371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5034664436043147700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1252720390, guid: 991a4badf00d28384a32b2c089782f03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _networkId: 0
+  _script: {fileID: -974389366465450183, guid: 7054cb95f8e80734f89f2372c87f437f, type: 3}
+  _properties: []
+  _uiOutput: 2
+  _uiOutputSettings:
+    rid: -2
+  _copyFromPropertiesVersion: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+--- !u!114 &4728209742481319640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5034664436043147700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 2016550917, guid: 991a4badf00d28384a32b2c089782f03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _networkId: 0
+  _script: {fileID: -974389366465450183, guid: e99e598d293e6514194b23794e716c8c, type: 3}
   _properties: []
   _uiOutput: 0
   _uiOutputSettings:
@@ -506,6 +571,7 @@ Transform:
   - {fileID: 7049724570704097690}
   - {fileID: 5333411844970269173}
   - {fileID: 7307281238699215199}
+  - {fileID: 2420657743329465370}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6462827367270360399

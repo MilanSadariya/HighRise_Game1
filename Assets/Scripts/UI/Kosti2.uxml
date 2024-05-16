@@ -6,24 +6,14 @@
     xmlns:editor="UnityEditor.UIElements"
     xsi:noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd"
 >
-<hr:UILuaView class="missionsPanel" picking-mode="Ignore">
-    <hr:UILabel class="title" text="Role Mission" picking-mode="Ignore"/>
-    <hr:UILuaView class="missionContainer" picking-mode="Ignore">
-        <hr:UILuaView class="missionRow" picking-mode="Ignore">
-            <hr:UIImage class="missionImage"/>
-            <hr:UILabel class="missionName"/>
-            <hr:UILabel class="missionProgress"/>
-            <hr:UIButton class="missionButton"/>
-        </hr:UILuaView>
-
-        <hr:UILuaView class="missionRow" picking-mode="Ignore">
-            <hr:UIImage class="missionImage"/>
-            <hr:UILabel class="missionName"/>
-            <hr:UILabel class="missionProgress"/>
-            <hr:UIButton class="missionButton"/>
-        </hr:UILuaView>
-        <!-- Repeat for additional mission rows -->
-    </hr:UILuaView>
-    <!-- Repeat for the second container -->
+<hr:UILuaView class="leftPanel" picking-mode="Ignore">
+    <VisualElement name = "thieveQuest" class="leftPanel" >
+        <hr:UILabel class="title" name="title" picking-mode="Ignore"/>
+        <hr:UILabel class="line" name="line1" picking-mode="Ignore"/>
+        <hr:UILabel class="description" name="description1" picking-mode="Ignore"/>
+        <hr:UILabel class="line" name="line2" picking-mode="Ignore"/>
+        <hr:UILabel class="description" name="description2" picking-mode="Ignore"/>
+    </VisualElement>
 </hr:UILuaView>
+
 </UXML>

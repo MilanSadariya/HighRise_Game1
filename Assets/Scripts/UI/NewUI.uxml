@@ -7,10 +7,38 @@
     xsi:noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd"
 >
 
-  <hr:UILuaView name="container" class="my-ui" picking-mode="Ignore" >
-    <hr:UIButton name="collectButton" picking-mode="Position" >
-        <hr:UILabel name="buttonLabel" picking-mode="Ignore">Click Me</hr:UILabel>
-    </hr:UIButton>
-  </hr:UILuaView>
+
+ <hr:UILuaView name="container" class="my-ui" picking-mode="Ignore">
+    <!-- [[ Thieve UI ]] -->
+    <VisualElement name="thieveUI" class="my-ui" picking-mode="Ignore">
+        <hr:UIButton name="collectButton" picking-mode="Position">
+        </hr:UIButton>
+    </VisualElement>
+    <!-- [[ Police UI ]] -->
+    <VisualElement name="policeUI" class="my-ui" picking-mode="Ignore">
+        <hr:UIButton name="caughtButton" picking-mode="Position">
+        </hr:UIButton>
+    </VisualElement>
+    <!-- [[ Left Panel ]] -->
+    <VisualElement name="thieveQuest" class="leftPanel" picking-mode="Ignore">
+        <hr:UILabel class="title" name="title" picking-mode="Ignore"/>
+        <hr:UILabel class="line" name="line1" picking-mode="Ignore"/>
+        <hr:UILabel class="description" name="description1" picking-mode="Ignore"/>
+        <hr:UILabel class="line" name="line2" picking-mode="Ignore"/> 
+        <hr:UILabel class="description" name="description2" picking-mode="Ignore"/> 
+        <hr:UILabel class="line" name="line3" picking-mode="Ignore"/> 
+        <hr:UILabel class="description" name="description3" picking-mode="Ignore"/> 
+        <hr:UILabel class="line" name="line4" picking-mode="Ignore"/> 
+        <hr:UILabel class="description" name="description4" picking-mode="Ignore"/> 
+    </VisualElement>
+
+<!-- Duplicate for Quest 2 -->
+<VisualElement name="quest2" class="leftPanel1" picking-mode="Ignore">
+    <hr:UILabel class="title" name="ptitle2" picking-mode="Ignore"/>
+    <hr:UILabel class="line" name="pline2" picking-mode="Ignore"/>
+    <hr:UILabel class="description" name="pdescription2" picking-mode="Ignore"/>
+</VisualElement>
+    
+</hr:UILuaView>
 
 </UXML>
