@@ -92,36 +92,36 @@ function self:Awake()
 end
 
 function HideThieveQuest()
-    -- thieveQuest:AddToClassList("hidden")
+    thieveQuest:AddToClassList("hidden")
 end
 
 function ShowThieveQuest()
-    -- thieveQuest:RemoveFromClassList("hidden")
+    thieveQuest:RemoveFromClassList("hidden")
 end
 
 
--- function DisableUI(ui)
---     ui:AddToClassList("disable")
--- end
+function DisableUI(ui)
+    ui:AddToClassList("disable")
+end
 
--- function EnableUI(ui)
---     ui:RemoveFromClassList("disable")
--- end
+function EnableUI(ui)
+    ui:RemoveFromClassList("disable")
+end
 
 function HideThieveUI()
-    -- thieveUI:AddToClassList("hidden")
+    thieveUI:AddToClassList("hidden")
 end
 
 function ShowThieveUI() 
-    -- thieveUI:RemoveFromClassList("hidden")
+    thieveUI:RemoveFromClassList("hidden")
 end
 
 function HidePoliceUI()
-    -- policeUI:AddToClassList("hidden")
+    policeUI:AddToClassList("hidden")
 end
 
 function ShowPoliceUI() 
-    -- policeUI:RemoveFromClassList("hidden")
+    policeUI:RemoveFromClassList("hidden")
 end
 
 function EnableUI()

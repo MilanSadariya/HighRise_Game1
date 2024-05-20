@@ -6,12 +6,16 @@ local thieveCap : GameObject = nil
 --!SerializeField
 local caughtParticle : GameObject = nil
 
+--!SerializeField
+local uiObject : GameObject = nil
+
 local collectedItem = nil
 local role  = nil
 local destroyingItem = nil
 local collected : GameObject = nil
 
 local gameManager = require("GameManager")
+
 
 
 function self:OnCollisionEnter(hit)
@@ -69,13 +73,18 @@ function OnSelectRole(_role)
     self.gameObject.name = _role
     role = _role
 
+    ui = uiObject:GetComponent("NewUI")
+
+
     -- set cap
     if role == "Police" then 
         policeCap.transform.localScale = Vector3.one
-        gameManager.UIClient:ShowPoliceUI()
+        -- gameManager.UIClient.UIScript:HideThieveQuest()
+        ui:HideThieveQuest()
     elseif role == "Thieves" then
         thieveCap.transform.localScale = Vector3.one
-        gameManager.UIClient:ShowThieveUI()
+        -- gameManager.UIClient.UIScript:ShowThieveQuest()
+        ui:ShowThieveQuest()
          ShowEverythingInCamera()
     end
 end

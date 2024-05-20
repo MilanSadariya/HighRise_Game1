@@ -34,10 +34,6 @@ PluginImporter:
       type: 3}
     Highrise.Lua.Generated.InteractScript: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}
-    Highrise.Lua.Generated.Joystick: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
-      type: 3}
-    Highrise.Lua.Generated.JoystickLua: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
-      type: 3}
     Highrise.Lua.Generated.Kosti: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}
     Highrise.Lua.Generated.Kosti2: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
@@ -49,8 +45,6 @@ PluginImporter:
     Highrise.Lua.Generated.LightBoardSpawner: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}
     Highrise.Lua.Generated.NewClient: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
-      type: 3}
-    Highrise.Lua.Generated.NewTestClient: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}
     Highrise.Lua.Generated.NewUI: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}
@@ -64,8 +58,6 @@ PluginImporter:
       type: 3}
     Highrise.Lua.Generated.PlayerController: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}
-    Highrise.Lua.Generated.PlayerMovement: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
-      type: 3}
     Highrise.Lua.Generated.PuddleScript: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}
     Highrise.Lua.Generated.RTSCamera: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
@@ -74,27 +66,17 @@ PluginImporter:
       type: 3}
     Highrise.Lua.Generated.SceneLoader: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}
-    Highrise.Lua.Generated.SodaFountain: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
+    Highrise.Lua.Generated.SellPanel: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}
-    Highrise.Lua.Generated.Temp: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
+    Highrise.Lua.Generated.SodaFountain: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}
     Highrise.Lua.Generated.Test: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}
-    Highrise.Lua.Generated.TestUI: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
-      type: 3}
     Highrise.Lua.Generated.ThievesItem: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
-      type: 3}
-    Highrise.Lua.Generated.UILuaView: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
-      type: 3}
-    Highrise.Lua.Generated.UINewView: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
-      type: 3}
-    Highrise.Lua.Generated.UINewView1: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}
     Highrise.Lua.Generated.UIView: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}
     Highrise.Lua.Generated.UIViewClient: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
-      type: 3}
-    Highrise.Lua.Generated.UserInterface: {fileID: 2800000, guid: 7b17fa3987cfb1748a297e97f9214051,
       type: 3}
   executionOrder: {}
   defineConstraints: []

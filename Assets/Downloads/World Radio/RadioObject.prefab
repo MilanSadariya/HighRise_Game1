@@ -52,7 +52,7 @@ MonoBehaviour:
   - Property: {fileID: -3428979122585815272, guid: dbd55daaf8c8d0b41b2ef0aaf144a1a5,
       type: 3}
     Value:
-      rid: 4226980473527075078
+      rid: 4226980473924748274
   _uiOutput: 0
   _uiOutputSettings:
     rid: -2
@@ -63,7 +63,7 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 4226980473527075078
+    - rid: 4226980473924748274
       type: {class: StringLuaPropertyValue, ns: Highrise.Lua, asm: com.pz.highrise.lua}
       data:
         _value: 
